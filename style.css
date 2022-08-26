@@ -1,0 +1,56 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header, footer {
+  background-color: #1f2937;
+}
+
+nav h2 {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+li {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+div.website-info h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f9faf8;
+}
+
+div.website-info p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+button {
+  background-color: #3882f6;
+  color: white;
+}
+
+img {
+  width: 35%;
+  height: auto;
+}
+
+figure img {
+  border-radius: 25%;
+  width: 10%;
+}
+
+div#main-content, section#photos, #gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gallery {
+  flex-direction: row;
+}
