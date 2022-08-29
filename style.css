@@ -5,8 +5,27 @@
   font-family: Roboto, sans-serif;
 }
 
-header, footer {
+header {
+  height: 68vh;
+}
+
+header, footer, body {
   background-color: #1f2937;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32.5%;
+  margin-top: 20px;
 }
 
 nav h2 {
@@ -14,25 +33,19 @@ nav h2 {
   color: #f9faf8;
 }
 
-li {
-  color: #e5e7eb;
-  font-size: 18px;
-}
-
-div.website-info h1 {
-  font-size: 48px;
-  font-weight: 800;
-  color: #f9faf8;
-}
-
-div.website-info p {
-  font-size: 18px;
-  color: #e5e7eb;
+a {
+  text-decoration: none;
+  color: #e5e7ebe0;
 }
 
 button {
   background-color: #3882f6;
   color: white;
+  padding: 8px 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 img {
@@ -45,10 +58,41 @@ figure img {
   width: 10%;
 }
 
+li {
+  color: #e5e7ebe0;
+  font-size: 18px;
+}
+
+div#website-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  justify-content: center;
+  gap: 3%;
+}
+
+div#website-info > div {
+  width: 33%;
+}
+
+div#website-info h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
+div#website-info p {
+  font-size: 18px;
+  color: #e5e7ebe0;
+  margin: 2px 0;
+}
+
 div#main-content, section#photos, #gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 #gallery {
