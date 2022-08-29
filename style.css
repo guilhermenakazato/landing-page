@@ -5,12 +5,23 @@
   font-family: 'Roboto', sans-serif;
 }
 
+h3 {
+  font-weight: 300;
+  font-size: 18px;
+  color: #e5e7ebe0;
+}
+
 header {
   height: 68vh;
 }
 
 footer {
   height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 header, footer, body {
@@ -50,6 +61,7 @@ button {
   border-radius: 5px;
   font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 img {
@@ -113,14 +125,46 @@ section#photos {
   height: 63vh;
 }
 
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+}
+
 section#quote {
   width: 100%;
   height: 57vh;
   background-color: #e5e7eb;
+  position: relative;
+}
+
+#quote-box {
+  width: 56.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#quote h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1f2937;
+  align-self: flex-end;
 }
 
 section#signup-motivation {
   height: 47vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 div#main-content h1 {
@@ -135,4 +179,25 @@ div#main-content h1 {
   justify-content:  center;
   align-items: flex-start;
   gap: 2%;
+}
+
+#signup-box {
+  background-color: #3882f6;
+  width: 75%;
+  height: 43%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+#signup-box p {
+  margin-top: 5px;
+  color: #e5e7ebe0;
+}
+
+#signup-box button {
+  border: 2px solid white;
 }
