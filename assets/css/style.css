@@ -11,8 +11,25 @@ h3 {
   color: #e5e7ebe0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  height: 68vh;
+  align-self: center;
+  margin-top: 2vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
@@ -37,15 +54,7 @@ ul {
   gap: 30px;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 32.5%;
-  margin-top: 20px;
-}
-
-nav h2 {
+header h2 {
   font-size: 24px;
   color: #f9faf8;
 }
@@ -68,7 +77,8 @@ button {
 }
 
 img {
-  width: 35%;
+  display: inline-block;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -93,21 +103,21 @@ li {
   font-size: 18px;
 }
 
-#website-info-inspirational-title {
-  width: 80%;
-}
-
 div#website-info {
   display: flex;
   flex-direction: row;
-  margin-top: 120px;
-  margin-bottom: 60px;
-  justify-content: center;
-  gap: 3%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15vh;
+  margin-bottom: 20vh;
 }
 
-div#website-info > div {
-  width: 33%;
+div#website-info div {
+  width: 35%;
+}
+
+div#sphynx-image {
+  width: 50% !important;
 }
 
 div#website-info h1 {
@@ -132,8 +142,9 @@ section#photos,
 }
 
 section#photos {
-  height: 63vh;
+  height: auto;
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 blockquote {
@@ -144,14 +155,15 @@ blockquote {
 }
 
 section#quote {
-  width: calc(100% - 40px);
-  height: 57vh;
+  width: 100%;
+  height: auto;
   background-color: #e5e7eb;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  margin: 20px;
+  padding: 15vh 0;
 }
 
 #quote-box {
@@ -171,7 +183,7 @@ section#quote h3 {
 }
 
 section#signup-motivation {
-  height: 47vh;
+  height: 44vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -214,6 +226,14 @@ div#main-content h1 {
   border: 2px solid white;
 }
 
+
+@media only screen and (orientation: portrait) {
+  div#website-info {
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+  }  
+}
+
 @media only screen and (max-width: 1024px) {
   img {
     width: 45%;
@@ -228,13 +248,26 @@ div#main-content h1 {
   header {
     height: auto;
     padding-bottom: 10px;
-  }
-
-  div#website-info {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 10px;
+    width: 90%;
+    border: 1px solid red;
+  }
+
+  div#sphynx-image {
+    width: 100% !important;
+    border: 1px solid red;
+  }
+  
+  div#website-info {
+    flex-direction: column-reverse;
+    border: 1px solid red;
+  }
+  
+  div#website-info div {
+    border: 1px solid red;
+    width: 100%;
   }
 
   h1 {
@@ -253,10 +286,6 @@ div#main-content h1 {
 
   figure img {
     margin: 0;
-  }
-
-  div#website-info > div {
-    width: 100%;
   }
 
   img {
