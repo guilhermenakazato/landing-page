@@ -110,10 +110,15 @@ div#website-info {
   align-items: center;
   margin-top: 15vh;
   margin-bottom: 20vh;
+  height: 100%;
 }
 
 div#website-info div {
   width: 35%;
+  height: 31.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div#sphynx-image {
@@ -226,17 +231,25 @@ div#main-content h1 {
   border: 2px solid white;
 }
 
-
 @media only screen and (orientation: portrait) {
   div#website-info {
-    margin-top: 15vw;
-    margin-bottom: 15vw;
-  }  
-}
+    margin: 2vw 0;
+  }
 
-@media only screen and (max-width: 1024px) {
-  img {
-    width: 45%;
+  section#photos {
+    padding-bottom: 10vw;
+  }
+
+  section#quote {
+    padding: 15vw 0;
+  }
+
+  section#signup-motivation {
+    height: 55vw;
+  }
+
+  #signup-box {
+    width: 90%;
   }
 }
 
@@ -252,22 +265,19 @@ div#main-content h1 {
     align-items: center;
     text-align: center;
     width: 90%;
-    border: 1px solid red;
   }
 
   div#sphynx-image {
     width: 100% !important;
-    border: 1px solid red;
   }
-  
+
   div#website-info {
     flex-direction: column-reverse;
-    border: 1px solid red;
   }
-  
+
   div#website-info div {
-    border: 1px solid red;
     width: 100%;
+    height: auto;
   }
 
   h1 {
@@ -312,10 +322,11 @@ div#main-content h1 {
     padding: 10px;
   }
 
-  #signup-box { 
+  #signup-box {
     flex-direction: column;
     text-align: center;
     width: 80%;
+    height: 70%;
     padding: 20px;
   }
 
@@ -323,5 +334,11 @@ div#main-content h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  img {
+    width: 100%;
   }
 }
